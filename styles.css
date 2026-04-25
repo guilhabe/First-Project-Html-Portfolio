@@ -1,0 +1,67 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Cabin", sans-serif;
+}
+
+body{
+    background-color: rgba(243, 229, 229, 0.904);
+}
+
+.botao{
+    border-radius: 10px;
+    width: 50px;
+    height: auto;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.esquerda-topo{
+    font-size: 40px;
+    padding: 20px;
+}
+
+.centro{
+    display: flex;
+    place-items: center;
+}
+
+h1{
+    transform: translate(70px, 140px);
+    font-size: 60px;
+}
+
+.container-botoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translate(0px, 120px);
+}
+
+.lista{
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.botoes{
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.skills{
+    font-size: 40px;
+    position: absolute;
+    right: 200px;
+    top: 20px;
+    text-decoration: none;
+    color: rgba(18, 18, 160, 0.658);
+}
+
