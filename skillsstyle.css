@@ -22,15 +22,6 @@ body{
     flex-direction: row;
 }
 
-.img{
-    border-radius: 10px;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    transform: translate(120px, 70px);
-    margin-left: 20px;
-}
-
 
 .h2-container{
     display: flex;
@@ -43,9 +34,53 @@ body{
 
 .goback{
     position: absolute;
-    font-size: 30px;
+    font-size: 40px;
     left: 900px;
     top: 600px;
     text-decoration: none;
     color: rgba(18, 18, 160, 0.658);
+    transition: all 0.3s ease;
+}
+
+.goback:hover{
+    transform: scale(1.1) translateY(-5px);
+}
+
+.goback:active{
+    transform: scale(0.95);
+}
+
+
+
+.img{
+    position: relative;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    transform: translate(120px, 70px);
+    margin-left: 20px;
+    
+}
+
+.img-box {
+    position: relative;
+}
+
+.tooltip {
+    position: absolute;
+    background: black;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: all 0.5s ease;
+    transform: translate(-20px, 850%);
+}
+
+.img:hover + .tooltip {
+    opacity: 1;
+    transform: translateY(840%);
 }
